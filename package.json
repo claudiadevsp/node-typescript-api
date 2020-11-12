@@ -1,0 +1,47 @@
+{
+  "name": "typescript-api",
+  "version": "1.0.0",
+  "description": "TypeScript Node.js API",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "yarn build && node dist/src/index.js",
+    "start:dev": "ts-node-dev 'src/index.ts'",
+    "lint": "eslint ./src ./test --ext .ts",
+    "lint:fix": "eslint ./src ./test --ext .ts --fix",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test:functional": "jest --projects ./test --runInBand"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/claudiadevsp/node-typescript-api.git"
+  },
+  "keywords": [
+    "nodejs",
+    "typescript",
+    "api"
+  ],
+  "author": "Claudia Souza",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/claudiadevsp/node-typescript-api/issues"
+  },
+  "homepage": "https://github.com/claudiadevsp/node-typescript-api#readme",
+  "devDependencies": {
+    "@types/jest": "^26.0.15",
+    "@types/module-alias": "^2.0.0",
+    "@types/node": "^14.14.7",
+    "@types/supertest": "^2.0.10",
+    "@typescript-eslint/eslint-plugin": "^4.7.0",
+    "@typescript-eslint/parser": "^4.7.0",
+    "eslint": "^7.13.0",
+    "jest": "^26.6.3",
+    "supertest": "^6.0.1",
+    "ts-jest": "^26.4.4",
+    "ts-node-dev": "^1.0.0",
+    "typescript": "^4.0.5"
+  },
+  "dependencies": {
+    "module-alias": "^2.2.2"
+  }
+}
