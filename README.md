@@ -1,2 +1,2 @@
 # node-typescript-api
-- Desenvolvimento de api com typeScript utilizando TDD e cobertura de testes.
+- Desenvolvimento de api NodeJS com TypeScript orientado a testes.
