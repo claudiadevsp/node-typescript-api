@@ -56,7 +56,7 @@ export class StormGlass {
     readonly stormGlassAPISource = 'noaa';
 
     public async fetchPoints(lat: number, lng: number): Promise<ForecastPoint[]> {
-        console.log(stormGlassResourceConfig)
+
         try {
             const response =  await this.request
             .get<StormGlassForecastResponse>(`${stormGlassResourceConfig.get('apiUrl')}/weather/point?lat=${lat}&lng=${lng}&params=${this.stormGlassAPIParams}&source=${this.stormGlassAPISource}`,
